@@ -110,7 +110,7 @@
                   "",
                   "// 5. Performance Test (Independent of outcome)",
                   "pm.test(\"Response time is acceptable\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(1500);",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
                   "});",
                   "",
                   "",

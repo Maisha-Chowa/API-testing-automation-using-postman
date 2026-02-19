@@ -1,0 +1,42 @@
+name: Restful Booker API Tests
+
+on:
+  schedule:
+    # Runs daily at 8:00 AM UTC
+    - cron: '0 8 * * *'
+
+  push:
+    branches: [main, master]
+
+  pull_request:
+    branches: [main, master]
+
+  # Allows manual triggering from the GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Newman API Tests
+        run: npm test
+
+      - name: Upload HTML Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-reports-${{ github.run_number }}
+          path: newman-reports/
+          retention-days: 30

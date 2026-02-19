@@ -1,0 +1,15 @@
+{
+  "name": "restful-booker-api-testing",
+  "version": "1.0.0",
+  "description": "Data-driven API tests for Restful Booker using Newman with CSV test data",
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "keywords": ["api-testing", "newman", "postman", "restful-booker"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
