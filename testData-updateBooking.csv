@@ -1,0 +1,5 @@
+firstName,lastName,totalPrice,depositPaid,checkin,checkout,additionalNeeds,expectedStatus,isEmptyBody,description
+Alice,Fuller,150,TRUE,2026-05-01,2026-05-10,Extra Pillows,200,FALSE,Positive: Full Update
+Bob,Builder,99,FALSE,2026-12-01,2026-12-05,None,200,FALSE,Positive: Full Update 2
+MISSING_FIELD,Missing,100,TRUE,2026-01-01,2026-01-02,None,400,FALSE,Negative: Missing Name
+,,,,,,,400,TRUE,Negative: Empty Body

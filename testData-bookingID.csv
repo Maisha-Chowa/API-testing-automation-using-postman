@@ -1,0 +1,8 @@
+bookingId,expectedStatus,isSuccess,description
+1,200,TRUE,Valid existing ID
+3,200,TRUE,Valid existing ID (Case 2)
+9999999,404,FALSE,Non-existent high ID
+abc,404,FALSE,Invalid ID format (String)
+0,404,FALSE,Zero ID
+-5,404,FALSE,Negative ID
+!@#$,404,FALSE,Special characters ID

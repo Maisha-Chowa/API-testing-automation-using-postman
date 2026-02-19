@@ -1,0 +1,5 @@
+totalPrice,depositPaid,expectedStatus,isEmptyBody,description
+120,FALSE,200,FALSE,Positive: Patch Price/Deposit
+-500,,200,FALSE,Negative: Negative Price (Logic check)
+,invalid-bool,200,FALSE,Negative: Invalid Boolean Type
+,,200,TRUE,Negative: Empty JSON Body {}

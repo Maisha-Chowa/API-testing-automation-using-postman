@@ -1,0 +1,7 @@
+username,password,expectedStatus,description,isSuccess
+admin,password123,200,valid credentials,TRUE
+admin,wrongpass,200,Bad credentials,FALSE
+nosuchuser,password123,200,Bad credentials,FALSE
+,password123,200,Bad credentials,FALSE
+admin,,200,Bad credentials,FALSE
+,,200,Bad credentials,FALSE

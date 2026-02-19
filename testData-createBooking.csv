@@ -1,0 +1,8 @@
+firstName,lastName,totalPrice,depositPaid,checkin,checkout,expectedStatus,isEmptyBody,description
+,Smith,200,FALSE,2024-01-01,2024-01-05,200,FALSE,Empty FirstName (Allowed)
+Negative,Price,-10,TRUE,2024-01-01,2024-01-05,200,FALSE,Negative Price (Allowed)
+MISSING_FIELD,Test,100,TRUE,2024-01-01,2024-01-05,500,FALSE,Missing 'firstname' key
+John,Doe,abc,TRUE,2024-01-01,2024-01-05,500,FALSE,Invalid Type: Price as String
+,,,,,,500,TRUE,Empty JSON Body {}
+!@#$%,^&*(),100,TRUE,2024-01-01,2024-01-05,200,FALSE,Special Characters in Name
+John,Doe,150,TRUE,2024-01-01,2024-01-05,200,FALSE,Positive: Valid Booking

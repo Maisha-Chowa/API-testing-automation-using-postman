@@ -1,0 +1,4 @@
+bookingId,expectedStatus,isSuccess,description
+{{last_booking_id}},201,TRUE,Delete valid booking
+99999999,405,FALSE,Delete non-existent ID
+abc,405,FALSE,Delete invalid ID format
