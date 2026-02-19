@@ -2,7 +2,6 @@ name: Restful Booker API Tests
 
 on:
   schedule:
-    # Runs daily at 8:00 AM UTC
     - cron: '0 8 * * *'
 
   push:
@@ -11,8 +10,10 @@ on:
   pull_request:
     branches: [main, master]
 
-  # Allows manual triggering from the GitHub Actions UI
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   api-tests:
@@ -31,12 +32,28 @@ jobs:
         run: npm install
 
       - name: Run Newman API Tests
+        id: tests
+        continue-on-error: true
         run: npm test
 
-      - name: Upload HTML Reports
+      - name: Upload Reports as Artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: newman-reports-${{ github.run_number }}
           path: newman-reports/
           retention-days: 30
+
+      - name: Deploy Reports to GitHub Pages
+        if: always() && github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./newman-reports
+
+      - name: Fail workflow if tests failed
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "::warning::Some API tests failed. Check the reports for details."
+          echo "View reports at: https://$(echo $GITHUB_REPOSITORY | cut -d/ -f1).github.io/$(echo $GITHUB_REPOSITORY | cut -d/ -f2)/"
+          exit 1
