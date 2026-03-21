@@ -2,7 +2,7 @@
 <html lang="en" style="overflow-y: scroll;">
 <head>
   <meta charset="UTF-8">
-  <title>Create Booking Report</title>
+  <title>Get Booking by ID Report</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
@@ -472,7 +472,7 @@ body.theme-light code {
                 <a class="nav-link text-white" id="pills-requests-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">Total Requests <span class="badge badge-light">7</span></a>
             </li>
             <li class="nav-item bg-danger" data-toggle="tooltip" title="Click to view the Failed Tests">
-                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">0</span></a>
+                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">1</span></a>
             </li>
             <li class="nav-item bg-warning" data-toggle="tooltip" title="Click to view the Skipped Tests">
                 <a class="nav-link text-white" id="pills-skipped-tab" data-toggle="pill" href="#pills-skipped" role="tab" aria-controls="pills-skipped" aria-selected="false">Skipped Tests <span class="badge badge-light">0</span></a>
@@ -482,12 +482,12 @@ body.theme-light code {
             <div class="tab-pane fade show active" id="pills-summary" role="tabcard" aria-labelledby="pills-summary-tab">
 <div class="row">
   <div class="col-md-9 col-lg-12 main">
-   <h1 class="display-2 text-center">Restful Booker — Create Booking</h1>
-   <h5 class="text-center">Friday, 20 March 2026 08:42:18</h5>
+   <h1 class="display-2 text-center">Restful Booker — Get Booking by ID</h1>
+   <h5 class="text-center">Saturday, 21 March 2026 08:35:29</h5>
    <div class="row">
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-success">
-      <div class="card-body bg-success">
+      <div class="card-body bg-danger">
        <div class="rotate">
         <i class="fa fa-retweet fa-5x"></i>
        </div>
@@ -503,18 +503,18 @@ body.theme-light code {
         <i class="fa fa-list fa-4x"></i>
        </div>
        <h6 class="text-uppercase">Total Assertions</h6>
-       <h1 class="display-1">18</h1>
+       <h1 class="display-1">21</h1>
       </div>
      </div>
     </div>
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-info">
-      <div class="card-body bg-success">
+      <div class="card-body bg-danger">
        <div class="rotate">
         <i class="fa fa-plus-circle fa-5x"></i>
        </div>
        <h6 class="text-uppercase">Total Failed Tests</h6>
-       <h1 class="display-1">0</h1>
+       <h1 class="display-1">1</h1>
       </div>
      </div>
     </div>
@@ -539,7 +539,7 @@ body.theme-light code {
                 <div class="card-body">
                 <h5 class="card-title text-uppercase text-white text-center bg-info">File Information</h5>
                 <span><i class="fas fa-file-code"></i></span><strong> Collection:</strong> Restful-Booker-API-testing<br>
-                <span><i class="fas fa-folder"></i></span><strong> Specified Folders:</strong> Create Booking<br>
+                <span><i class="fas fa-folder"></i></span><strong> Specified Folders:</strong> Get Booking by ID<br>
                 <span><i class="fas fa-file-code"></i></span><strong> Environment:</strong> Restful-Booker-env<br>
                 </div>
             </div>
@@ -597,9 +597,9 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             <div class="card border-info">
                 <div class="card-body">
                 <h5 class="card-title text-uppercase text-white text-center bg-info">Timings and Data</h5>
-                <span><i class="fas fa-stopwatch"></i></span><strong> Total run duration:</strong> 1615ms<br>
-                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 731B<br>
-                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 5ms<br>
+                <span><i class="fas fa-stopwatch"></i></span><strong> Total run duration:</strong> 1631ms<br>
+                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 195B<br>
+                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 10ms<br>
                 </div>
             </div>
         </div>
@@ -623,7 +623,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                     </tr>
                     <tr>
                         <td>Prerequest Scripts</td>
-                        <td class="text-center">14</td>
+                        <td class="text-center">7</td>
                         <td class="text-center">0</td>
                     </tr>
                     <tr>
@@ -631,10 +631,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                         <td class="text-center">14</td>
                         <td class="text-center">0</td>
                     </tr>
-                    <tr class="">
+                    <tr class="table-danger">
                         <td>Assertions</td>
-                        <td class="text-center">18</td>
-                        <td class="text-center">0</td>
+                        <td class="text-center">21</td>
+                        <td class="text-center">1</td>
                     </tr>
                     <tr class="">
                         <td>Skipped Tests</td>
@@ -655,9 +655,36 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             <div class="tab-pane fade" id="pills-failed" role="tabcard" aria-labelledby="pills-failed-tab">
                 <button id="topOfFailuresScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
-                <div class="alert alert-success text-uppercase text-center">
-                     <br><br><h1 class="text-center">There are no failed tests <span><i class="far fa-thumbs-up"></i></span></h1><br><br>
-                </div>
+                    <div class="btn-group float-right" role="group" aria-label="Button Group">
+                        <button id="openAllFailed" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 185px;">Expand All Failed Tests</button>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="alert alert-danger text-uppercase text-center">
+                        <h4>Showing 1 Failure</h4>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                    <div class="card-deck">
+                        <div class="card border-danger">
+                            <div class="card-header bg-danger">
+                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-dc17d679-18b4-4b7d-9581-2b6285cc2d35" aria-expanded="false" aria-controls="collapse" id="fails-dc17d679-18b4-4b7d-9581-2b6285cc2d35" class="collapsed text-white z-block">
+                                    Iteration 1 - AssertionError - Get Booking by ID - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
+                                </a>
+                            </div>
+                            <div id="fails-collapse-dc17d679-18b4-4b7d-9581-2b6285cc2d35" class="collapse" aria-labelledby="fails-dc17d679-18b4-4b7d-9581-2b6285cc2d35">
+                            <div class="card-body">
+                                <h5 ><strong>Failed Test:</strong> Status code is 200</h5>
+                            <hr>
+                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
+                            <div>
+                                <pre><code >expected response to have status code 200 but got 404</code></pre>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </div>
 
             <div class="tab-pane fade" id="pills-skipped" role="tabcard" aria-labelledby="pills-skipped-tab">
@@ -672,6 +699,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             <button id="topOfRequestsScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
             <div class="btn-group float-right" role="group" aria-label="Button Group">
+                <button id="showOnlyFailures" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width:160px;">Show Failed Iterations</button>
                 <button id="openAll" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Folders</button>
                 <button id="openAllRequests" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Requests</button>
             </div>
@@ -687,22 +715,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
     <h6 class="text-uppercase text-muted" id="iterationSelected" style="padding-top: 10px;"></h6>
 	<div class="tab-content" id="execution-data">
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0" class="collapsed text-dark z-block">
-        <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0" class="collapsed text-dark z-block">
+        <i class="fas fa-info-circle float-left resultsInfoPass"  style="color: #c24a3f; padding-top: 4px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4" class="card-deck iteration-0">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-e5ce52f7-abac-4b06-a068-9f95dcaaa484" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
-                    <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4" aria-expanded="false" aria-controls="collapse" id="requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4" class="collapsed text-white z-block">
-                    Iteration: 1 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                    <div class="card-header  bg-danger iteration-0">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484" aria-expanded="false" aria-controls="collapse" id="requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484" class="collapsed text-white z-block">
+                    Iteration: 1 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4" class="collapse" aria-labelledby="requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4">
+                    <div id="collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484" class="collapse" aria-labelledby="requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -710,22 +738,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/1" target="_blank">https://restful-booker.herokuapp.com/booking/1</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 164B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
                                         <div class="progress" style="height: 40px;">
-                                            <div class="progress-bar  bg-success" style="width: 100%" role="progressbar">
-                                            <h5 style="padding-top:5px;"><strong>100 %</strong></h5>
+                                            <div class="progress-bar  bg-danger" style="width: 100%" role="progressbar">
+                                            <h5 style="padding-top:5px;"><strong>67 %</strong></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -749,10 +777,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -762,7 +786,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">9a4fff62-5310-49e5-ab67-e24ffe725e20</td>
+                                                        <td class="text-wrap">18810fda-3019-4c1a-a5b8-02a165e5d337</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -775,10 +799,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">137</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -793,24 +813,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;firstname&quot;:&quot;&quot;,&quot;lastname&quot;:&quot;Smith&quot;,&quot;totalprice&quot;:200,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -818,19 +820,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">164</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
-                                                    <td class="text-wrap">application/json; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:17 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;a4-/BlVyR/+O/dtsYWFpETaHnRIIcI&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -838,11 +840,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996137&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Vs1DOZNsB8K1BaEiI33TbIyr7uc01kJ%2FgjvrPHW4Tig%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082127&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996137&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Vs1DOZNsB8K1BaEiI33TbIyr7uc01kJ%2FgjvrPHW4Tig%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082127&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -871,10 +873,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">{&quot;bookingid&quot;:920,&quot;booking&quot;:{&quot;firstname&quot;:&quot;&quot;,&quot;lastname&quot;:&quot;Smith&quot;,&quot;totalprice&quot;:200,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}}</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -890,19 +892,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 200 for: Empty FirstName (Allowed)</td>
+                                                    <td >Description: Valid existing ID</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Schema Validation</td>
-                                                    <td class="text-center bg-success">1</td>
+                                                    <td >Status code is 200</td>
                                                     <td class="text-center ">0</td>
+                                                    <td class="text-center bg-danger">1</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Persistence: Store ID</td>
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -911,14 +913,14 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">3</td>
-                                                    <td class="text-center">0</td>
+                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">1</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
                                     </div>
-                                    <div class="row d-none">
+                                    <div class="row ">
                                     <div class="col-sm-12 mb-3">
                                         <div class="card-deck">
                                         <div class="card border-danger" style="width: 50rem;">
@@ -928,6 +930,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <table class="table table-hover">
                                                     <thead><tr class="text-nowrap"><th>Test Name</th><th>Assertion Error</th></tr></thead>
                                                         <tbody>
+                                                            <tr>
+                                                                <td class="w-45 text-nowrap ">Status code is 200</td>
+                                                                <td class="w-55"><pre><code >expected response to have status code 200 but got 404</code></pre></td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -947,22 +953,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-1">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e" class="card-deck iteration-1">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad" class="card-deck iteration-1">
             <div class="row iteration-1">
                 <div class="col-sm-12 mb-3 iteration-1">
                 <div class="card iteration-1">
                     <div class="card-header  bg-success iteration-1">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e" aria-expanded="false" aria-controls="collapse" id="requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e" class="collapsed text-white z-block">
-                    Iteration: 2 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad" aria-expanded="false" aria-controls="collapse" id="requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad" class="collapsed text-white z-block">
+                    Iteration: 2 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e" class="collapse" aria-labelledby="requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e">
+                    <div id="collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad" class="collapse" aria-labelledby="requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -970,16 +976,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/3" target="_blank">https://restful-booker.herokuapp.com/booking/3</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 171B</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 141B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -1009,10 +1015,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -1022,7 +1024,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">963baef9-cddd-44b2-9aee-c18f03c3d2a0</td>
+                                                        <td class="text-wrap">ec62a50d-cb1d-4837-a5d4-103c6873875f</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1035,10 +1037,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">144</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1053,24 +1051,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;firstname&quot;:&quot;Negative&quot;,&quot;lastname&quot;:&quot;Price&quot;,&quot;totalprice&quot;:-10,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -1078,7 +1058,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">171</td>
+                                                    <td class="text-wrap">141</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
@@ -1086,11 +1066,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:17 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;ab-NkD69jPpwRA0HPROz7BOYZYXSlk&quot;</td>
+                                                    <td class="text-wrap">W/&quot;8d-JKVMDdwFS6VSIo/CjrtZzASwPNw&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -1098,11 +1078,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996137&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082128&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996137&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082128&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1131,10 +1111,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">{&quot;bookingid&quot;:924,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Negative&quot;,&quot;lastname&quot;:&quot;Price&quot;,&quot;totalprice&quot;:-10,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}}</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">{&quot;firstname&quot;:&quot;Sally&quot;,&quot;lastname&quot;:&quot;Brown&quot;,&quot;totalprice&quot;:265,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-03-08&quot;,&quot;checkout&quot;:&quot;2025-05-21&quot;}}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1150,19 +1130,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 200 for: Negative Price (Allowed)</td>
+                                                    <td >Description: Valid existing ID (Case 2)</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Schema Validation</td>
+                                                    <td >Status code is 200</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Persistence: Store ID</td>
+                                                    <td >Schema Validation for Successful Response</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -1207,22 +1187,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-2">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f" class="card-deck iteration-2">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f" class="card-deck iteration-2">
             <div class="row iteration-2">
                 <div class="col-sm-12 mb-3 iteration-2">
                 <div class="card iteration-2">
                     <div class="card-header  bg-success iteration-2">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f" aria-expanded="false" aria-controls="collapse" id="requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f" class="collapsed text-white z-block">
-                    Iteration: 3 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f" aria-expanded="false" aria-controls="collapse" id="requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f" class="collapsed text-white z-block">
+                    Iteration: 3 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f" class="collapse" aria-labelledby="requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f">
+                    <div id="collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f" class="collapse" aria-labelledby="requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1230,16 +1210,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/9999999" target="_blank">https://restful-booker.herokuapp.com/booking/9999999</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 500 - Internal Server Error</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 21B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 11ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -1269,10 +1249,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -1282,7 +1258,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">84848caf-9fc6-4427-b964-5baf8a2b67b5</td>
+                                                        <td class="text-wrap">d04a8fae-ce22-40d2-8075-de7fd43799b8</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1295,10 +1271,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">102</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1313,24 +1285,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;totalprice&quot;:100,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -1338,7 +1292,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">21</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
@@ -1346,11 +1300,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:17 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -1358,11 +1312,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996137&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082128&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;pqmOr794%2FY7HenGKSNauhLbPW0%2BDqwCpH93mWOCd57M%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996137&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082128&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1391,10 +1345,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">Internal Server Error</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1410,13 +1364,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 500 for: Missing &#x27;firstname&#x27; key</td>
+                                                    <td >Description: Non-existent high ID</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Negative Check: Response contains error message</td>
+                                                    <td >Status code is 404</td>
+                                                    <td class="text-center bg-success">1</td>
+                                                    <td class="text-center ">0</td>
+                                                    <td class="text-center ">0</td>
+                                                </tr>
+                                                <tr >
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -1425,7 +1385,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">3</td>
                                                     <td class="text-center">0</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
@@ -1461,22 +1421,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-3">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-c040ef1d-1959-4d39-9576-0c27715e93ca" class="card-deck iteration-3">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-ea999d6b-e086-4761-b9ea-557d98bcbf0c" class="card-deck iteration-3">
             <div class="row iteration-3">
                 <div class="col-sm-12 mb-3 iteration-3">
                 <div class="card iteration-3">
                     <div class="card-header  bg-success iteration-3">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-c040ef1d-1959-4d39-9576-0c27715e93ca" aria-expanded="false" aria-controls="collapse" id="requests-c040ef1d-1959-4d39-9576-0c27715e93ca" class="collapsed text-white z-block">
-                    Iteration: 4 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c" aria-expanded="false" aria-controls="collapse" id="requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c" class="collapsed text-white z-block">
+                    Iteration: 4 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-c040ef1d-1959-4d39-9576-0c27715e93ca" class="collapse" aria-labelledby="requests-c040ef1d-1959-4d39-9576-0c27715e93ca">
+                    <div id="collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c" class="collapse" aria-labelledby="requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1484,16 +1444,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/abc" target="_blank">https://restful-booker.herokuapp.com/booking/abc</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 500 - Internal Server Error</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 21B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -1523,10 +1483,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -1536,7 +1492,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">48b94604-f16f-4043-98e6-94eb63a562bc</td>
+                                                        <td class="text-wrap">43c6d1d3-f86c-4b13-ad1e-90a91394abfc</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1549,10 +1505,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">139</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1567,24 +1519,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;totalprice&quot;:null,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -1592,7 +1526,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">21</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
@@ -1600,11 +1534,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:18 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -1612,11 +1546,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996138&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082128&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996138&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082128&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1645,10 +1579,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">Internal Server Error</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1664,13 +1598,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 500 for: Invalid Type: Price as String</td>
+                                                    <td >Description: Invalid ID format (String)</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Negative Check: Response contains error message</td>
+                                                    <td >Status code is 404</td>
+                                                    <td class="text-center bg-success">1</td>
+                                                    <td class="text-center ">0</td>
+                                                    <td class="text-center ">0</td>
+                                                </tr>
+                                                <tr >
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -1679,7 +1619,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">3</td>
                                                     <td class="text-center">0</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
@@ -1715,22 +1655,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-4">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-7ccd39c5-60b9-46c0-88b0-6f874cb618ca" class="card-deck iteration-4">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-7da6680d-a27d-465f-9402-57db0ec8be56" class="card-deck iteration-4">
             <div class="row iteration-4">
                 <div class="col-sm-12 mb-3 iteration-4">
                 <div class="card iteration-4">
                     <div class="card-header  bg-success iteration-4">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca" aria-expanded="false" aria-controls="collapse" id="requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca" class="collapsed text-white z-block">
-                    Iteration: 5 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-7da6680d-a27d-465f-9402-57db0ec8be56" aria-expanded="false" aria-controls="collapse" id="requests-7da6680d-a27d-465f-9402-57db0ec8be56" class="collapsed text-white z-block">
+                    Iteration: 5 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca" class="collapse" aria-labelledby="requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca">
+                    <div id="collapse-7da6680d-a27d-465f-9402-57db0ec8be56" class="collapse" aria-labelledby="requests-7da6680d-a27d-465f-9402-57db0ec8be56">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1738,16 +1678,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/0" target="_blank">https://restful-booker.herokuapp.com/booking/0</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 500 - Internal Server Error</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 21B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 9ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -1777,10 +1717,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -1790,7 +1726,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">7363eead-e9e6-4bd9-b660-e57c45979676</td>
+                                                        <td class="text-wrap">c7d25fb8-70df-41e8-97a7-7a54dc6011b1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1803,10 +1739,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">3</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1821,24 +1753,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -1846,7 +1760,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">21</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
@@ -1854,11 +1768,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:18 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -1866,11 +1780,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996138&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082128&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996138&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Z2Cggefvwg2xxiq01RH9uj3iAQrjEb%2BX7o%2Fq86jkqpQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082128&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1899,10 +1813,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">Internal Server Error</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1918,13 +1832,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 500 for: Empty JSON Body {}</td>
+                                                    <td >Description: Zero ID</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Negative Check: Response contains error message</td>
+                                                    <td >Status code is 404</td>
+                                                    <td class="text-center bg-success">1</td>
+                                                    <td class="text-center ">0</td>
+                                                    <td class="text-center ">0</td>
+                                                </tr>
+                                                <tr >
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -1933,7 +1853,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">3</td>
                                                     <td class="text-center">0</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
@@ -1969,22 +1889,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-5">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-c6aeb08c-b93b-4874-ab91-5716c67f1f66" class="card-deck iteration-5">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-b8b134aa-8d87-41f9-8022-9e1354e5d086" class="card-deck iteration-5">
             <div class="row iteration-5">
                 <div class="col-sm-12 mb-3 iteration-5">
                 <div class="card iteration-5">
                     <div class="card-header  bg-success iteration-5">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66" aria-expanded="false" aria-controls="collapse" id="requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66" class="collapsed text-white z-block">
-                    Iteration: 6 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086" aria-expanded="false" aria-controls="collapse" id="requests-b8b134aa-8d87-41f9-8022-9e1354e5d086" class="collapsed text-white z-block">
+                    Iteration: 6 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66" class="collapse" aria-labelledby="requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66">
+                    <div id="collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086" class="collapse" aria-labelledby="requests-b8b134aa-8d87-41f9-8022-9e1354e5d086">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1992,16 +1912,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/-5" target="_blank">https://restful-booker.herokuapp.com/booking/-5</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 168B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -2031,10 +1951,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -2044,7 +1960,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">a95e129e-a733-4ac9-87e5-ff2de67f1b42</td>
+                                                        <td class="text-wrap">c05c3f29-8384-4e01-b901-6ff8940c24fe</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2057,10 +1973,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">141</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -2075,24 +1987,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;firstname&quot;:&quot;!@#$%&quot;,&quot;lastname&quot;:&quot;^&amp;*()&quot;,&quot;totalprice&quot;:100,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -2100,19 +1994,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">168</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
-                                                    <td class="text-wrap">application/json; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:18 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:29 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;a8-YmV5PWMmJ4DjmgMGmzROzfqFgGA&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -2120,11 +2014,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996138&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;DrMK0NAXNJ6Q9suOI1rbzhFJSDynq%2FBcj19o8Z2B5M4%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082129&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996138&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;DrMK0NAXNJ6Q9suOI1rbzhFJSDynq%2FBcj19o8Z2B5M4%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082129&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -2153,10 +2047,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">{&quot;bookingid&quot;:936,&quot;booking&quot;:{&quot;firstname&quot;:&quot;!@#$%&quot;,&quot;lastname&quot;:&quot;^&amp;*()&quot;,&quot;totalprice&quot;:100,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}}</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2172,19 +2066,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 200 for: Special Characters in Name</td>
+                                                    <td >Description: Negative ID</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Schema Validation</td>
+                                                    <td >Status code is 404</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Persistence: Store ID</td>
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -2229,22 +2123,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-6">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6" aria-expanded="false" aria-controls="collapse" id="folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6" aria-expanded="false" aria-controls="collapse" id="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
-            Create Booking - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+            Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6" class="collapse" aria-labelledby="folder-dfa2327b-3382-4bda-ba23-1545c2845edf">
-            <div id="folder-6b695e7d-0186-4249-a094-6f9bb756becc" class="card-deck iteration-6">
+        <div id="folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6" class="collapse" aria-labelledby="folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9">
+            <div id="folder-1d30daba-07ca-4b81-abb8-02392b5e4648" class="card-deck iteration-6">
             <div class="row iteration-6">
                 <div class="col-sm-12 mb-3 iteration-6">
                 <div class="card iteration-6">
                     <div class="card-header  bg-success iteration-6">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-6b695e7d-0186-4249-a094-6f9bb756becc" aria-expanded="false" aria-controls="collapse" id="requests-6b695e7d-0186-4249-a094-6f9bb756becc" class="collapsed text-white z-block">
-                    Iteration: 7 - CreateBooking <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
+                        <a data-toggle="collapse" href="#" data-target="#collapse-1d30daba-07ca-4b81-abb8-02392b5e4648" aria-expanded="false" aria-controls="collapse" id="requests-1d30daba-07ca-4b81-abb8-02392b5e4648" class="collapsed text-white z-block">
+                    Iteration: 7 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-6b695e7d-0186-4249-a094-6f9bb756becc" class="collapse" aria-labelledby="requests-6b695e7d-0186-4249-a094-6f9bb756becc">
+                    <div id="collapse-1d30daba-07ca-4b81-abb8-02392b5e4648" class="collapse" aria-labelledby="requests-1d30daba-07ca-4b81-abb8-02392b5e4648">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2252,16 +2146,16 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> POST</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="https://restful-booker.herokuapp.com/booking/!@#$" target="_blank">https://restful-booker.herokuapp.com/booking/!@#$</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 5ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 165B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -2291,10 +2185,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                         <td class="text-wrap">application/json</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-nowrap">Content-Type</td>
-                                                        <td class="text-wrap">application/json</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td class="text-nowrap">User-Agent</td>
                                                         <td class="text-wrap">PostmanRuntime/7.39.1</td>
                                                     </tr>
@@ -2304,7 +2194,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">8a5f34ec-be78-44bf-80a1-8e22d52e8884</td>
+                                                        <td class="text-wrap">d2136722-473e-4f58-b4c9-ce455a6af7aa</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2317,10 +2207,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <tr>
                                                         <td class="text-nowrap">Connection</td>
                                                         <td class="text-wrap">keep-alive</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-nowrap">Content-Length</td>
-                                                        <td class="text-wrap">138</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -2335,24 +2221,6 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                             <div class="card-deck">
                             <div class="card border-info" style="width: 50rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase text-white text-center bg-info">Request Body</h5>
-                                        <div class="dyn-height">
-                                            <pre><code id="copyReqText-0" class="prettyPrint">{&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;totalprice&quot;:150,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}
-        </code></pre>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyReqText-0">Copy to Clipboard</button>
-                                        </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-12 mb-3">
-                            <div class="card-deck">
-                            <div class="card border-info" style="width: 50rem;">
-                                <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Headers</h5>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -2360,19 +2228,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">165</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
-                                                    <td class="text-wrap">application/json; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 20 Mar 2026 08:42:18 GMT</td>
+                                                    <td class="text-wrap">Sat, 21 Mar 2026 08:35:29 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;a5-B4cXPtdObBpXkiH5uiao4pDUYEI&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -2380,11 +2248,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1773996138&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;DrMK0NAXNJ6Q9suOI1rbzhFJSDynq%2FBcj19o8Z2B5M4%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1774082129&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;7W11D5xKCfPSY4tAGOYf61Mn5b8RThUtK9uxREYhA4w%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1773996138&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;DrMK0NAXNJ6Q9suOI1rbzhFJSDynq%2FBcj19o8Z2B5M4%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1774082129&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -2413,10 +2281,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-54991adf-264f-49dc-9af0-f47590bd838b" class="prettyPrint">{&quot;bookingid&quot;:940,&quot;booking&quot;:{&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;totalprice&quot;:150,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-01-01&quot;,&quot;checkout&quot;:&quot;2024-01-05&quot;}}}</code></pre>
+                                                <pre><code id="copyText-4d13fc98-00df-485b-9864-7ef3d595f311" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-54991adf-264f-49dc-9af0-f47590bd838b">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4d13fc98-00df-485b-9864-7ef3d595f311">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2432,19 +2300,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                         <thead><tr class="text-center"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
                                             <tbody>
                                                 <tr >
-                                                    <td >Status should be 200 for: Positive: Valid Booking</td>
+                                                    <td >Description: Special characters ID</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Schema Validation</td>
+                                                    <td >Status code is 404</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Persistence: Store ID</td>
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -2554,37 +2422,37 @@ $('#openAll').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5').addClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6').removeClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5').addClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6').removeClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6').addClass('show')
         $('#openAll').html("Collapse Folders");
         break;
     case 2:
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-0').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-1').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-2').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-3').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-4').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-5').removeClass('show')
-            $('#folder-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6').addClass('collapsed')
-            $('#folder-collapse-dfa2327b-3382-4bda-ba23-1545c2845edf-iteration-6').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-0').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-1').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-2').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-3').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-4').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-5').removeClass('show')
+            $('#folder-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6').addClass('collapsed')
+            $('#folder-collapse-f01fa566-98d4-4d28-aa3e-3d494cb832d9-iteration-6').removeClass('show')
         $('#openAll').html("Expand Folders");
         break;
 }
@@ -2600,65 +2468,65 @@ $('#openAllRequests').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('collapsed')
-            $('#collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('collapsed')
-            $('#requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('show')
-            $('#collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('show')
-            $('#requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('collapsed')
-            $('#collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('collapsed')
-            $('#requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('show')
-            $('#collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('show')
-            $('#requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('collapsed')
-            $('#collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('collapsed')
-            $('#requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('show')
-            $('#collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('show')
-            $('#requests-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('collapsed')
-            $('#collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('collapsed')
-            $('#requests-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('show')
-            $('#collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('show')
-            $('#requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('collapsed')
-            $('#collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('collapsed')
-            $('#requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('show')
-            $('#collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('show')
-            $('#requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('collapsed')
-            $('#collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('collapsed')
-            $('#requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('show')
-            $('#collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('show')
-            $('#requests-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('collapsed')
-            $('#collapse-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('collapsed')
-            $('#requests-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('show')
-            $('#collapse-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('show')
+            $('#requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('collapsed')
+            $('#collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('collapsed')
+            $('#requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('show')
+            $('#collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('show')
+            $('#requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('collapsed')
+            $('#collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('collapsed')
+            $('#requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('show')
+            $('#collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('show')
+            $('#requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('collapsed')
+            $('#collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('collapsed')
+            $('#requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('show')
+            $('#collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('show')
+            $('#requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('collapsed')
+            $('#collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('collapsed')
+            $('#requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('show')
+            $('#collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('show')
+            $('#requests-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('collapsed')
+            $('#collapse-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('collapsed')
+            $('#requests-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('show')
+            $('#collapse-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('show')
+            $('#requests-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('collapsed')
+            $('#collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('collapsed')
+            $('#requests-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('show')
+            $('#collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('show')
+            $('#requests-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('collapsed')
+            $('#collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('collapsed')
+            $('#requests-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('show')
+            $('#collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('show')
         $('#openAllRequests').html("Collapse Requests");
         break;
     case 2:
-            $('#requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('collapsed')
-            $('#collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('collapsed')
-            $('#requests-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('show')
-            $('#collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('show')
-            $('#requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('collapsed')
-            $('#collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('collapsed')
-            $('#requests-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('show')
-            $('#collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('show')
-            $('#requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('collapsed')
-            $('#collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('collapsed')
-            $('#requests-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('show')
-            $('#collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('show')
-            $('#requests-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('collapsed')
-            $('#collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('collapsed')
-            $('#requests-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('show')
-            $('#collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('show')
-            $('#requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('collapsed')
-            $('#collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('collapsed')
-            $('#requests-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('show')
-            $('#collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('show')
-            $('#requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('collapsed')
-            $('#collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('collapsed')
-            $('#requests-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('show')
-            $('#collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('show')
-            $('#requests-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('collapsed')
-            $('#collapse-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('collapsed')
-            $('#requests-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('show')
-            $('#collapse-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('show')
+            $('#requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('collapsed')
+            $('#collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('collapsed')
+            $('#requests-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('show')
+            $('#collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('show')
+            $('#requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('collapsed')
+            $('#collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('collapsed')
+            $('#requests-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('show')
+            $('#collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('show')
+            $('#requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('collapsed')
+            $('#collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('collapsed')
+            $('#requests-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('show')
+            $('#collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('show')
+            $('#requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('collapsed')
+            $('#collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('collapsed')
+            $('#requests-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('show')
+            $('#collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('show')
+            $('#requests-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('collapsed')
+            $('#collapse-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('collapsed')
+            $('#requests-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('show')
+            $('#collapse-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('show')
+            $('#requests-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('collapsed')
+            $('#collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('collapsed')
+            $('#requests-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('show')
+            $('#collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('show')
+            $('#requests-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('collapsed')
+            $('#collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('collapsed')
+            $('#requests-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('show')
+            $('#collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('show')
         $('#openAllRequests').html("Expand Requests");
         break;
 }
@@ -2674,65 +2542,65 @@ $('#openAllSkipped').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#skipped-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('collapsed')
-            $('#skipped-collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('collapsed')
-            $('#skipped-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('show')
-            $('#skipped-collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('show')
-            $('#skipped-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('collapsed')
-            $('#skipped-collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('collapsed')
-            $('#skipped-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('show')
-            $('#skipped-collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('show')
-            $('#skipped-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('collapsed')
-            $('#skipped-collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('collapsed')
-            $('#skipped-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('show')
-            $('#skipped-collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('show')
-            $('#skipped-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('collapsed')
-            $('#skipped-collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('collapsed')
-            $('#skipped-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('show')
-            $('#skipped-collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('show')
-            $('#skipped-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('collapsed')
-            $('#skipped-collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('collapsed')
-            $('#skipped-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('show')
-            $('#skipped-collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('show')
-            $('#skipped-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('collapsed')
-            $('#skipped-collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('collapsed')
-            $('#skipped-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('show')
-            $('#skipped-collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('show')
-            $('#skipped-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('collapsed')
-            $('#skipped-collapse-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('collapsed')
-            $('#skipped-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('show')
-            $('#skipped-collapse-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('show')
+            $('#skipped-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('collapsed')
+            $('#skipped-collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('collapsed')
+            $('#skipped-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('show')
+            $('#skipped-collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('show')
+            $('#skipped-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('collapsed')
+            $('#skipped-collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('collapsed')
+            $('#skipped-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('show')
+            $('#skipped-collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('show')
+            $('#skipped-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('collapsed')
+            $('#skipped-collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('collapsed')
+            $('#skipped-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('show')
+            $('#skipped-collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('show')
+            $('#skipped-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('collapsed')
+            $('#skipped-collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('collapsed')
+            $('#skipped-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('show')
+            $('#skipped-collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('show')
+            $('#skipped-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('collapsed')
+            $('#skipped-collapse-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('collapsed')
+            $('#skipped-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('show')
+            $('#skipped-collapse-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('show')
+            $('#skipped-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('collapsed')
+            $('#skipped-collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('collapsed')
+            $('#skipped-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('show')
+            $('#skipped-collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('show')
+            $('#skipped-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('collapsed')
+            $('#skipped-collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('collapsed')
+            $('#skipped-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('show')
+            $('#skipped-collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('show')
         $('#openAllSkipped').html("Collapse All Skipped Tests");
         break;
     case 2:
-            $('#skipped-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('collapsed')
-            $('#skipped-collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').addClass('collapsed')
-            $('#skipped-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('show')
-            $('#skipped-collapse-7c7e7056-8a12-4bcc-a9d4-51aee3bc5fa4').removeClass('show')
-            $('#skipped-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('collapsed')
-            $('#skipped-collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').addClass('collapsed')
-            $('#skipped-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('show')
-            $('#skipped-collapse-0b2bd97a-5ca4-412d-8d04-8ab4c7498e6e').removeClass('show')
-            $('#skipped-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('collapsed')
-            $('#skipped-collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').addClass('collapsed')
-            $('#skipped-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('show')
-            $('#skipped-collapse-62f6ae85-2b8b-4347-9f73-1de6d9a1fe5f').removeClass('show')
-            $('#skipped-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('collapsed')
-            $('#skipped-collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').addClass('collapsed')
-            $('#skipped-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('show')
-            $('#skipped-collapse-c040ef1d-1959-4d39-9576-0c27715e93ca').removeClass('show')
-            $('#skipped-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('collapsed')
-            $('#skipped-collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').addClass('collapsed')
-            $('#skipped-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('show')
-            $('#skipped-collapse-7ccd39c5-60b9-46c0-88b0-6f874cb618ca').removeClass('show')
-            $('#skipped-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('collapsed')
-            $('#skipped-collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').addClass('collapsed')
-            $('#skipped-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('show')
-            $('#skipped-collapse-c6aeb08c-b93b-4874-ab91-5716c67f1f66').removeClass('show')
-            $('#skipped-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('collapsed')
-            $('#skipped-collapse-6b695e7d-0186-4249-a094-6f9bb756becc').addClass('collapsed')
-            $('#skipped-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('show')
-            $('#skipped-collapse-6b695e7d-0186-4249-a094-6f9bb756becc').removeClass('show')
+            $('#skipped-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('collapsed')
+            $('#skipped-collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').addClass('collapsed')
+            $('#skipped-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('show')
+            $('#skipped-collapse-e5ce52f7-abac-4b06-a068-9f95dcaaa484').removeClass('show')
+            $('#skipped-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('collapsed')
+            $('#skipped-collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').addClass('collapsed')
+            $('#skipped-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('show')
+            $('#skipped-collapse-0e5fca4f-6e67-48b2-bf12-f9791d0ba5ad').removeClass('show')
+            $('#skipped-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('collapsed')
+            $('#skipped-collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').addClass('collapsed')
+            $('#skipped-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('show')
+            $('#skipped-collapse-c9e73ca4-85ab-47ee-a85d-dc58d4136b5f').removeClass('show')
+            $('#skipped-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('collapsed')
+            $('#skipped-collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').addClass('collapsed')
+            $('#skipped-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('show')
+            $('#skipped-collapse-ea999d6b-e086-4761-b9ea-557d98bcbf0c').removeClass('show')
+            $('#skipped-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('collapsed')
+            $('#skipped-collapse-7da6680d-a27d-465f-9402-57db0ec8be56').addClass('collapsed')
+            $('#skipped-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('show')
+            $('#skipped-collapse-7da6680d-a27d-465f-9402-57db0ec8be56').removeClass('show')
+            $('#skipped-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('collapsed')
+            $('#skipped-collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').addClass('collapsed')
+            $('#skipped-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('show')
+            $('#skipped-collapse-b8b134aa-8d87-41f9-8022-9e1354e5d086').removeClass('show')
+            $('#skipped-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('collapsed')
+            $('#skipped-collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').addClass('collapsed')
+            $('#skipped-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('show')
+            $('#skipped-collapse-1d30daba-07ca-4b81-abb8-02392b5e4648').removeClass('show')
         $('#openAllSkipped').html("Expand All Skipped Tests");
         break;
 }
@@ -2750,9 +2618,21 @@ let failedItemContent
 let failedItemHeading
 switch (clickCount){
     case 1:
+            failedItemHeading = $('#fails-dc17d679-18b4-4b7d-9581-2b6285cc2d35');
+            failedItemContent = $("#fails-collapse-dc17d679-18b4-4b7d-9581-2b6285cc2d35");
+            failedItemHeading.removeClass('collapsed')
+            failedItemContent.removeClass('collapsed')
+            failedItemHeading.addClass('show')
+            failedItemContent.addClass('show')
         $('#openAllFailed').html("Collapse All Failed Tests");
         break;
     case 2:
+            failedItemHeading = $('#fails-dc17d679-18b4-4b7d-9581-2b6285cc2d35');
+            failedItemContent = $("#fails-collapse-dc17d679-18b4-4b7d-9581-2b6285cc2d35");
+            failedItemHeading.removeClass('show')
+            failedItemContent.removeClass('show')
+            failedItemHeading.addClass('collapsed')
+            failedItemContent.addClass('collapsed')
         $('#openAllFailed').html("Expand All Failed Tests");
         break;
 }
@@ -2877,6 +2757,8 @@ function scrollFunction() {
     document.getElementById("openAllRequests").style.display = "none";
 
 
+    document.getElementById("showOnlyFailures").style.display = "none";
+    document.getElementById("openAllFailed").style.display = "none";
   } else {
     document.getElementById("topOfRequestsScreen").style.display = "none";
     document.getElementById("topOfFailuresScreen").style.display = "none";
@@ -2884,6 +2766,8 @@ function scrollFunction() {
     document.getElementById("openAll").style.display = "block";
     document.getElementById("openAllRequests").style.display = "block";
 
+    document.getElementById("showOnlyFailures").style.display = "block";
+    document.getElementById("openAllFailed").style.display = "block";
   }
 }
 
@@ -2946,6 +2830,7 @@ window.onload = function () {
   document.getElementById('iteration-0').click();
   document.getElementById('iterationSelected').innerHTML = `Iteration ${document.getElementById('iteration-0').innerHTML} selected`
 
+    $("#iteration-0").removeClass('itPassed').addClass('itFailed')
 }
 </script>
 
