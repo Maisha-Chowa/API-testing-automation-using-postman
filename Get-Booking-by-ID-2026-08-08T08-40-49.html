@@ -472,7 +472,7 @@ body.theme-light code {
                 <a class="nav-link text-white" id="pills-requests-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">Total Requests <span class="badge badge-light">7</span></a>
             </li>
             <li class="nav-item bg-danger" data-toggle="tooltip" title="Click to view the Failed Tests">
-                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">0</span></a>
+                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">1</span></a>
             </li>
             <li class="nav-item bg-warning" data-toggle="tooltip" title="Click to view the Skipped Tests">
                 <a class="nav-link text-white" id="pills-skipped-tab" data-toggle="pill" href="#pills-skipped" role="tab" aria-controls="pills-skipped" aria-selected="false">Skipped Tests <span class="badge badge-light">0</span></a>
@@ -483,11 +483,11 @@ body.theme-light code {
 <div class="row">
   <div class="col-md-9 col-lg-12 main">
    <h1 class="display-2 text-center">Restful Booker — Get Booking by ID</h1>
-   <h5 class="text-center">Friday, 07 August 2026 08:59:05</h5>
+   <h5 class="text-center">Saturday, 08 August 2026 08:40:56</h5>
    <div class="row">
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-success">
-      <div class="card-body bg-success">
+      <div class="card-body bg-danger">
        <div class="rotate">
         <i class="fa fa-retweet fa-5x"></i>
        </div>
@@ -509,12 +509,12 @@ body.theme-light code {
     </div>
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-info">
-      <div class="card-body bg-success">
+      <div class="card-body bg-danger">
        <div class="rotate">
         <i class="fa fa-plus-circle fa-5x"></i>
        </div>
        <h6 class="text-uppercase">Total Failed Tests</h6>
-       <h1 class="display-1">0</h1>
+       <h1 class="display-1">1</h1>
       </div>
      </div>
     </div>
@@ -598,8 +598,8 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                 <div class="card-body">
                 <h5 class="card-title text-uppercase text-white text-center bg-info">Timings and Data</h5>
                 <span><i class="fas fa-stopwatch"></i></span><strong> Total run duration:</strong> 2s<br>
-                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 354B<br>
-                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 69ms<br>
+                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 192B<br>
+                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 66ms<br>
                 </div>
             </div>
         </div>
@@ -631,10 +631,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                         <td class="text-center">14</td>
                         <td class="text-center">0</td>
                     </tr>
-                    <tr class="">
+                    <tr class="table-danger">
                         <td>Assertions</td>
                         <td class="text-center">21</td>
-                        <td class="text-center">0</td>
+                        <td class="text-center">1</td>
                     </tr>
                     <tr class="">
                         <td>Skipped Tests</td>
@@ -655,9 +655,36 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             <div class="tab-pane fade" id="pills-failed" role="tabcard" aria-labelledby="pills-failed-tab">
                 <button id="topOfFailuresScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
-                <div class="alert alert-success text-uppercase text-center">
-                     <br><br><h1 class="text-center">There are no failed tests <span><i class="far fa-thumbs-up"></i></span></h1><br><br>
-                </div>
+                    <div class="btn-group float-right" role="group" aria-label="Button Group">
+                        <button id="openAllFailed" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 185px;">Expand All Failed Tests</button>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="alert alert-danger text-uppercase text-center">
+                        <h4>Showing 1 Failure</h4>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                    <div class="card-deck">
+                        <div class="card border-danger">
+                            <div class="card-header bg-danger">
+                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba" aria-expanded="false" aria-controls="collapse" id="fails-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba" class="collapsed text-white z-block">
+                                    Iteration 1 - AssertionError - Get Booking by ID - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
+                                </a>
+                            </div>
+                            <div id="fails-collapse-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba" class="collapse" aria-labelledby="fails-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba">
+                            <div class="card-body">
+                                <h5 ><strong>Failed Test:</strong> Status code is 200</h5>
+                            <hr>
+                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
+                            <div>
+                                <pre><code >expected response to have status code 200 but got 404</code></pre>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </div>
 
             <div class="tab-pane fade" id="pills-skipped" role="tabcard" aria-labelledby="pills-skipped-tab">
@@ -672,6 +699,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             <button id="topOfRequestsScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
             <div class="btn-group float-right" role="group" aria-label="Button Group">
+                <button id="showOnlyFailures" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width:160px;">Show Failed Iterations</button>
                 <button id="openAll" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Folders</button>
                 <button id="openAllRequests" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Requests</button>
             </div>
@@ -687,22 +715,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
     <h6 class="text-uppercase text-muted" id="iterationSelected" style="padding-top: 10px;"></h6>
 	<div class="tab-content" id="execution-data">
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0" class="collapsed text-dark z-block">
-        <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0" class="collapsed text-dark z-block">
+        <i class="fas fa-info-circle float-left resultsInfoPass"  style="color: #c24a3f; padding-top: 4px;"></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf" class="card-deck iteration-0">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-1e72b693-1479-4946-84a6-49dbf0a8b461" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
-                    <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf" aria-expanded="false" aria-controls="collapse" id="requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf" class="collapsed text-white z-block">
+                    <div class="card-header  bg-danger iteration-0">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-1e72b693-1479-4946-84a6-49dbf0a8b461" aria-expanded="false" aria-controls="collapse" id="requests-1e72b693-1479-4946-84a6-49dbf0a8b461" class="collapsed text-white z-block">
                     Iteration: 1 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf" class="collapse" aria-labelledby="requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf">
+                    <div id="collapse-1e72b693-1479-4946-84a6-49dbf0a8b461" class="collapse" aria-labelledby="requests-1e72b693-1479-4946-84a6-49dbf0a8b461">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -717,15 +745,15 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 69ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 170B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 67ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
                                         <div class="progress" style="height: 40px;">
-                                            <div class="progress-bar  bg-success" style="width: 100%" role="progressbar">
-                                            <h5 style="padding-top:5px;"><strong>100 %</strong></h5>
+                                            <div class="progress-bar  bg-danger" style="width: 100%" role="progressbar">
+                                            <h5 style="padding-top:5px;"><strong>67 %</strong></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -758,7 +786,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">d9a704e7-1ec9-4a03-9a9f-a050e26113fa</td>
+                                                        <td class="text-wrap">c020826f-71a2-4315-bfc1-8f45cc20e722</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -792,19 +820,19 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">170</td>
+                                                    <td class="text-wrap">9</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
-                                                    <td class="text-wrap">application/json; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:03 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:54 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;aa-CwRBPUXilto7My2hoR/0va8nAU4&quot;</td>
+                                                    <td class="text-wrap">W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -812,11 +840,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;BgzKZ9ffMm5tMa8v4u3gSon7DSgkLpGFuwbXVL%2Fo64c%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093143&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;aIAbzQ4CRpaO8AYk8eeFHgB3%2BHs6kiS9mG9N3hJCrfQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178454&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;BgzKZ9ffMm5tMa8v4u3gSon7DSgkLpGFuwbXVL%2Fo64c%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093143&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;aIAbzQ4CRpaO8AYk8eeFHgB3%2BHs6kiS9mG9N3hJCrfQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178454&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -845,10 +873,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">{&quot;firstname&quot;:&quot;Sally&quot;,&quot;lastname&quot;:&quot;Smith&quot;,&quot;totalprice&quot;:241,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2016-05-28&quot;,&quot;checkout&quot;:&quot;2017-01-28&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -871,12 +899,12 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr >
                                                     <td >Status code is 200</td>
-                                                    <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
+                                                    <td class="text-center bg-danger">1</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                                 <tr >
-                                                    <td >Schema Validation for Successful Response</td>
+                                                    <td >Error Message Check</td>
                                                     <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
                                                     <td class="text-center ">0</td>
@@ -885,14 +913,14 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">3</td>
-                                                    <td class="text-center">0</td>
+                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">1</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
                                     </div>
-                                    <div class="row d-none">
+                                    <div class="row ">
                                     <div class="col-sm-12 mb-3">
                                         <div class="card-deck">
                                         <div class="card border-danger" style="width: 50rem;">
@@ -902,6 +930,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     <table class="table table-hover">
                                                     <thead><tr class="text-nowrap"><th>Test Name</th><th>Assertion Error</th></tr></thead>
                                                         <tbody>
+                                                            <tr>
+                                                                <td class="w-45 text-nowrap ">Status code is 200</td>
+                                                                <td class="w-55"><pre><code >expected response to have status code 200 but got 404</code></pre></td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -921,22 +953,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-1">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-0a4a9a60-623a-4a7e-9507-38e32d5d8cec" class="card-deck iteration-1">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-3085772d-6203-4902-8d05-9a41a863edc6" class="card-deck iteration-1">
             <div class="row iteration-1">
                 <div class="col-sm-12 mb-3 iteration-1">
                 <div class="card iteration-1">
                     <div class="card-header  bg-success iteration-1">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec" aria-expanded="false" aria-controls="collapse" id="requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-3085772d-6203-4902-8d05-9a41a863edc6" aria-expanded="false" aria-controls="collapse" id="requests-3085772d-6203-4902-8d05-9a41a863edc6" class="collapsed text-white z-block">
                     Iteration: 2 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec" class="collapse" aria-labelledby="requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec">
+                    <div id="collapse-3085772d-6203-4902-8d05-9a41a863edc6" class="collapse" aria-labelledby="requests-3085772d-6203-4902-8d05-9a41a863edc6">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -952,8 +984,8 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 70ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 139B</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 66ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 138B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -992,7 +1024,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">025231ba-3f55-4ebf-8721-701b59ccd05a</td>
+                                                        <td class="text-wrap">8a6cf8ed-4659-480f-b5eb-2ba56351e6eb</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1026,7 +1058,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Length</td>
-                                                    <td class="text-wrap">139</td>
+                                                    <td class="text-wrap">138</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Content-Type</td>
@@ -1034,11 +1066,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:04 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:55 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
-                                                    <td class="text-wrap">W/&quot;8b-jrGO15Q4hEvCtLesJJ0mKEDHC+M&quot;</td>
+                                                    <td class="text-wrap">W/&quot;8a-iS7FEJNmCPKhPHys/lwZgZaboPk&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Nel</td>
@@ -1046,11 +1078,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093144&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178455&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093144&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178455&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1079,10 +1111,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">{&quot;firstname&quot;:&quot;Mark&quot;,&quot;lastname&quot;:&quot;Jones&quot;,&quot;totalprice&quot;:736,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-06-12&quot;,&quot;checkout&quot;:&quot;2021-04-22&quot;}}</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">{&quot;firstname&quot;:&quot;Jim&quot;,&quot;lastname&quot;:&quot;Brown&quot;,&quot;totalprice&quot;:459,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2015-04-05&quot;,&quot;checkout&quot;:&quot;2020-02-23&quot;}}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1155,22 +1187,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-2">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-e802f84f-6439-4049-913e-0c93ffcad99e" class="card-deck iteration-2">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-27b89661-9007-4898-a7ee-b4449ff60b8c" class="card-deck iteration-2">
             <div class="row iteration-2">
                 <div class="col-sm-12 mb-3 iteration-2">
                 <div class="card iteration-2">
                     <div class="card-header  bg-success iteration-2">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-e802f84f-6439-4049-913e-0c93ffcad99e" aria-expanded="false" aria-controls="collapse" id="requests-e802f84f-6439-4049-913e-0c93ffcad99e" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-27b89661-9007-4898-a7ee-b4449ff60b8c" aria-expanded="false" aria-controls="collapse" id="requests-27b89661-9007-4898-a7ee-b4449ff60b8c" class="collapsed text-white z-block">
                     Iteration: 3 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-e802f84f-6439-4049-913e-0c93ffcad99e" class="collapse" aria-labelledby="requests-e802f84f-6439-4049-913e-0c93ffcad99e">
+                    <div id="collapse-27b89661-9007-4898-a7ee-b4449ff60b8c" class="collapse" aria-labelledby="requests-27b89661-9007-4898-a7ee-b4449ff60b8c">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1186,7 +1218,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 71ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 68ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1226,7 +1258,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">384146aa-388f-45af-95b1-e28ee474e081</td>
+                                                        <td class="text-wrap">ad0fe2cc-0133-4553-9043-3fd89af6d194</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1268,7 +1300,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:04 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:55 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
@@ -1280,11 +1312,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093144&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178455&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093144&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178455&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1313,10 +1345,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">Not Found</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1389,22 +1421,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-3">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-6e03dbe7-0142-452c-8dfb-6803931f6c9a" class="card-deck iteration-3">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-8b2b3c3b-6b29-4f84-b447-eb959ae0e486" class="card-deck iteration-3">
             <div class="row iteration-3">
                 <div class="col-sm-12 mb-3 iteration-3">
                 <div class="card iteration-3">
                     <div class="card-header  bg-success iteration-3">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a" aria-expanded="false" aria-controls="collapse" id="requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486" aria-expanded="false" aria-controls="collapse" id="requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486" class="collapsed text-white z-block">
                     Iteration: 4 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a" class="collapse" aria-labelledby="requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a">
+                    <div id="collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486" class="collapse" aria-labelledby="requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1420,7 +1452,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 70ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 67ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1460,7 +1492,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">4749efd8-71b2-4757-ae13-bfd27a8c8eaf</td>
+                                                        <td class="text-wrap">5b746d6e-4e00-46ea-8e96-556b3c81c8e6</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1502,7 +1534,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:04 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:55 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
@@ -1514,11 +1546,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093144&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178455&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093144&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;v2iQZ%2BD1c6qba6chWFcOPYNuCIW31fqvJmvk6gshUJk%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178455&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1547,10 +1579,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">Not Found</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1623,22 +1655,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-4">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-882837ab-eefa-4278-8dca-fdef471fb298" class="card-deck iteration-4">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-b18d0c3d-0af9-403c-a706-463f7c26a916" class="card-deck iteration-4">
             <div class="row iteration-4">
                 <div class="col-sm-12 mb-3 iteration-4">
                 <div class="card iteration-4">
                     <div class="card-header  bg-success iteration-4">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-882837ab-eefa-4278-8dca-fdef471fb298" aria-expanded="false" aria-controls="collapse" id="requests-882837ab-eefa-4278-8dca-fdef471fb298" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-b18d0c3d-0af9-403c-a706-463f7c26a916" aria-expanded="false" aria-controls="collapse" id="requests-b18d0c3d-0af9-403c-a706-463f7c26a916" class="collapsed text-white z-block">
                     Iteration: 5 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-882837ab-eefa-4278-8dca-fdef471fb298" class="collapse" aria-labelledby="requests-882837ab-eefa-4278-8dca-fdef471fb298">
+                    <div id="collapse-b18d0c3d-0af9-403c-a706-463f7c26a916" class="collapse" aria-labelledby="requests-b18d0c3d-0af9-403c-a706-463f7c26a916">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1654,7 +1686,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 69ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 66ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1694,7 +1726,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">b22b9450-6d9b-47e7-a580-dcf829e10ea7</td>
+                                                        <td class="text-wrap">64626d40-6d56-4c98-8192-b5179e5b7eee</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1736,7 +1768,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:04 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:56 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
@@ -1748,11 +1780,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093144&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178456&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;jPEh2n%2Foy1X0MfXaAIKM%2FyU%2BkqH34iqE0P5%2FImYo0BU%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093144&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178456&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -1781,10 +1813,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">Not Found</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1857,22 +1889,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-5">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b" class="card-deck iteration-5">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906" class="card-deck iteration-5">
             <div class="row iteration-5">
                 <div class="col-sm-12 mb-3 iteration-5">
                 <div class="card iteration-5">
                     <div class="card-header  bg-success iteration-5">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b" aria-expanded="false" aria-controls="collapse" id="requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906" aria-expanded="false" aria-controls="collapse" id="requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906" class="collapsed text-white z-block">
                     Iteration: 6 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b" class="collapse" aria-labelledby="requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b">
+                    <div id="collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906" class="collapse" aria-labelledby="requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1888,7 +1920,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 69ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 67ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1928,7 +1960,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">7a36599b-c4d6-4d2f-84ec-24ffa96aff0a</td>
+                                                        <td class="text-wrap">a420ec44-40bf-4330-86a0-b9756ad15fbf</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1970,7 +2002,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:05 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:56 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
@@ -1982,11 +2014,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;VVcAN92WxFsEnDQd5ejYOJr8ooNqm34N74ZNGZih5mQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093145&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178456&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;VVcAN92WxFsEnDQd5ejYOJr8ooNqm34N74ZNGZih5mQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093145&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178456&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -2015,10 +2047,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">Not Found</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2091,22 +2123,22 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-6">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6" aria-expanded="false" aria-controls="collapse" id="folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6" aria-expanded="false" aria-controls="collapse" id="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             Get Booking by ID - 1 Request in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6" class="collapse" aria-labelledby="folder-4ab97c58-5361-4142-b92c-da3a7864a02b">
-            <div id="folder-ee5666a6-8c3e-4058-af85-3faf9ed8a72c" class="card-deck iteration-6">
+        <div id="folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6" class="collapse" aria-labelledby="folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951">
+            <div id="folder-41f553cb-840f-40aa-a62d-69dd548a9c29" class="card-deck iteration-6">
             <div class="row iteration-6">
                 <div class="col-sm-12 mb-3 iteration-6">
                 <div class="card iteration-6">
                     <div class="card-header  bg-success iteration-6">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c" aria-expanded="false" aria-controls="collapse" id="requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-41f553cb-840f-40aa-a62d-69dd548a9c29" aria-expanded="false" aria-controls="collapse" id="requests-41f553cb-840f-40aa-a62d-69dd548a9c29" class="collapsed text-white z-block">
                     Iteration: 7 - GetBookingById <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c" class="collapse" aria-labelledby="requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c">
+                    <div id="collapse-41f553cb-840f-40aa-a62d-69dd548a9c29" class="collapse" aria-labelledby="requests-41f553cb-840f-40aa-a62d-69dd548a9c29">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2122,7 +2154,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 404 - Not Found</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 69ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 66ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 9B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -2162,7 +2194,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">53b1f8de-1978-4967-93fc-6c0834a025fb</td>
+                                                        <td class="text-wrap">8d30a884-6f60-4ce4-9d77-1bc64b4eafde</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2204,7 +2236,7 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Date</td>
-                                                    <td class="text-wrap">Fri, 07 Aug 2026 08:59:05 GMT</td>
+                                                    <td class="text-wrap">Sat, 08 Aug 2026 08:40:56 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Etag</td>
@@ -2216,11 +2248,11 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Report-To</td>
-                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;VVcAN92WxFsEnDQd5ejYOJr8ooNqm34N74ZNGZih5mQ%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786093145&quot;}],&quot;max_age&quot;:3600}</td>
+                                                    <td class="text-wrap">{&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D\u0026sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts&#x3D;1786178456&quot;}],&quot;max_age&quot;:3600}</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Reporting-Endpoints</td>
-                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;VVcAN92WxFsEnDQd5ejYOJr8ooNqm34N74ZNGZih5mQ%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786093145&quot;</td>
+                                                    <td class="text-wrap">heroku-nel&#x3D;&quot;https://nel.heroku.com/reports?s&#x3D;Ke85jqo48OZ9d%2Bz2rbEcHU%2F4CP8pvEWSM3cTUR4BX5U%3D&amp;sid&#x3D;c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts&#x3D;1786178456&quot;</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">Server</td>
@@ -2249,10 +2281,10 @@ Customize the tests in the &quot;Scripts&quot; tab if needed. Don&#x27;t forget 
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d395c28a-984e-4462-9d60-ae6891f676cb" class="prettyPrint">Not Found</code></pre>
+                                                <pre><code id="copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3" class="prettyPrint">Not Found</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d395c28a-984e-4462-9d60-ae6891f676cb">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-4dc5dbb7-3f42-4dcc-a775-5198e120c9d3">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2390,37 +2422,37 @@ $('#openAll').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5').addClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6').removeClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5').addClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6').removeClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6').addClass('show')
         $('#openAll').html("Collapse Folders");
         break;
     case 2:
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-0').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-1').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-2').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-3').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-4').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-5').removeClass('show')
-            $('#folder-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6').addClass('collapsed')
-            $('#folder-collapse-4ab97c58-5361-4142-b92c-da3a7864a02b-iteration-6').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-0').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-1').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-2').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-3').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-4').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-5').removeClass('show')
+            $('#folder-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6').addClass('collapsed')
+            $('#folder-collapse-8536f4ad-4bb0-4a9b-8bcb-59f1df53d951-iteration-6').removeClass('show')
         $('#openAll').html("Expand Folders");
         break;
 }
@@ -2436,65 +2468,65 @@ $('#openAllRequests').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('collapsed')
-            $('#collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('collapsed')
-            $('#requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('show')
-            $('#collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('show')
-            $('#requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('collapsed')
-            $('#collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('collapsed')
-            $('#requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('show')
-            $('#collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('show')
-            $('#requests-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('collapsed')
-            $('#collapse-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('collapsed')
-            $('#requests-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('show')
-            $('#collapse-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('show')
-            $('#requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('collapsed')
-            $('#collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('collapsed')
-            $('#requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('show')
-            $('#collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('show')
-            $('#requests-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('collapsed')
-            $('#collapse-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('collapsed')
-            $('#requests-882837ab-eefa-4278-8dca-fdef471fb298').addClass('show')
-            $('#collapse-882837ab-eefa-4278-8dca-fdef471fb298').addClass('show')
-            $('#requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('collapsed')
-            $('#collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('collapsed')
-            $('#requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('show')
-            $('#collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('show')
-            $('#requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('collapsed')
-            $('#collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('collapsed')
-            $('#requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('show')
-            $('#collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('show')
+            $('#requests-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('collapsed')
+            $('#collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('collapsed')
+            $('#requests-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('show')
+            $('#collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('show')
+            $('#requests-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('collapsed')
+            $('#collapse-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('collapsed')
+            $('#requests-3085772d-6203-4902-8d05-9a41a863edc6').addClass('show')
+            $('#collapse-3085772d-6203-4902-8d05-9a41a863edc6').addClass('show')
+            $('#requests-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('collapsed')
+            $('#collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('collapsed')
+            $('#requests-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('show')
+            $('#collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('show')
+            $('#requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('collapsed')
+            $('#collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('collapsed')
+            $('#requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('show')
+            $('#collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('show')
+            $('#requests-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('collapsed')
+            $('#collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('collapsed')
+            $('#requests-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('show')
+            $('#collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('show')
+            $('#requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('collapsed')
+            $('#collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('collapsed')
+            $('#requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('show')
+            $('#collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('show')
+            $('#requests-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('collapsed')
+            $('#collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('collapsed')
+            $('#requests-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('show')
+            $('#collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('show')
         $('#openAllRequests').html("Collapse Requests");
         break;
     case 2:
-            $('#requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('collapsed')
-            $('#collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('collapsed')
-            $('#requests-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('show')
-            $('#collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('show')
-            $('#requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('collapsed')
-            $('#collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('collapsed')
-            $('#requests-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('show')
-            $('#collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('show')
-            $('#requests-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('collapsed')
-            $('#collapse-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('collapsed')
-            $('#requests-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('show')
-            $('#collapse-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('show')
-            $('#requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('collapsed')
-            $('#collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('collapsed')
-            $('#requests-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('show')
-            $('#collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('show')
-            $('#requests-882837ab-eefa-4278-8dca-fdef471fb298').addClass('collapsed')
-            $('#collapse-882837ab-eefa-4278-8dca-fdef471fb298').addClass('collapsed')
-            $('#requests-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('show')
-            $('#collapse-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('show')
-            $('#requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('collapsed')
-            $('#collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('collapsed')
-            $('#requests-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('show')
-            $('#collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('show')
-            $('#requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('collapsed')
-            $('#collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('collapsed')
-            $('#requests-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('show')
-            $('#collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('show')
+            $('#requests-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('collapsed')
+            $('#collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('collapsed')
+            $('#requests-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('show')
+            $('#collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('show')
+            $('#requests-3085772d-6203-4902-8d05-9a41a863edc6').addClass('collapsed')
+            $('#collapse-3085772d-6203-4902-8d05-9a41a863edc6').addClass('collapsed')
+            $('#requests-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('show')
+            $('#collapse-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('show')
+            $('#requests-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('collapsed')
+            $('#collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('collapsed')
+            $('#requests-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('show')
+            $('#collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('show')
+            $('#requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('collapsed')
+            $('#collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('collapsed')
+            $('#requests-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('show')
+            $('#collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('show')
+            $('#requests-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('collapsed')
+            $('#collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('collapsed')
+            $('#requests-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('show')
+            $('#collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('show')
+            $('#requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('collapsed')
+            $('#collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('collapsed')
+            $('#requests-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('show')
+            $('#collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('show')
+            $('#requests-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('collapsed')
+            $('#collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('collapsed')
+            $('#requests-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('show')
+            $('#collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('show')
         $('#openAllRequests').html("Expand Requests");
         break;
 }
@@ -2510,65 +2542,65 @@ $('#openAllSkipped').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#skipped-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('collapsed')
-            $('#skipped-collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('collapsed')
-            $('#skipped-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('show')
-            $('#skipped-collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('show')
-            $('#skipped-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('collapsed')
-            $('#skipped-collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('collapsed')
-            $('#skipped-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('show')
-            $('#skipped-collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('show')
-            $('#skipped-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('collapsed')
-            $('#skipped-collapse-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('collapsed')
-            $('#skipped-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('show')
-            $('#skipped-collapse-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('show')
-            $('#skipped-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('collapsed')
-            $('#skipped-collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('collapsed')
-            $('#skipped-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('show')
-            $('#skipped-collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('show')
-            $('#skipped-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('collapsed')
-            $('#skipped-collapse-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('collapsed')
-            $('#skipped-882837ab-eefa-4278-8dca-fdef471fb298').addClass('show')
-            $('#skipped-collapse-882837ab-eefa-4278-8dca-fdef471fb298').addClass('show')
-            $('#skipped-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('collapsed')
-            $('#skipped-collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('collapsed')
-            $('#skipped-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('show')
-            $('#skipped-collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('show')
-            $('#skipped-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('collapsed')
-            $('#skipped-collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('collapsed')
-            $('#skipped-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('show')
-            $('#skipped-collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('show')
+            $('#skipped-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('collapsed')
+            $('#skipped-collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('collapsed')
+            $('#skipped-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('show')
+            $('#skipped-collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('show')
+            $('#skipped-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('collapsed')
+            $('#skipped-collapse-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('collapsed')
+            $('#skipped-3085772d-6203-4902-8d05-9a41a863edc6').addClass('show')
+            $('#skipped-collapse-3085772d-6203-4902-8d05-9a41a863edc6').addClass('show')
+            $('#skipped-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('collapsed')
+            $('#skipped-collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('collapsed')
+            $('#skipped-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('show')
+            $('#skipped-collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('show')
+            $('#skipped-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('collapsed')
+            $('#skipped-collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('collapsed')
+            $('#skipped-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('show')
+            $('#skipped-collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('show')
+            $('#skipped-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('collapsed')
+            $('#skipped-collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('collapsed')
+            $('#skipped-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('show')
+            $('#skipped-collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('show')
+            $('#skipped-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('collapsed')
+            $('#skipped-collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('collapsed')
+            $('#skipped-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('show')
+            $('#skipped-collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('show')
+            $('#skipped-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('collapsed')
+            $('#skipped-collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('collapsed')
+            $('#skipped-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('show')
+            $('#skipped-collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('show')
         $('#openAllSkipped').html("Collapse All Skipped Tests");
         break;
     case 2:
-            $('#skipped-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('collapsed')
-            $('#skipped-collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').addClass('collapsed')
-            $('#skipped-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('show')
-            $('#skipped-collapse-83bf4ca9-bd93-4c9c-9a9b-4c96126779cf').removeClass('show')
-            $('#skipped-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('collapsed')
-            $('#skipped-collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').addClass('collapsed')
-            $('#skipped-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('show')
-            $('#skipped-collapse-0a4a9a60-623a-4a7e-9507-38e32d5d8cec').removeClass('show')
-            $('#skipped-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('collapsed')
-            $('#skipped-collapse-e802f84f-6439-4049-913e-0c93ffcad99e').addClass('collapsed')
-            $('#skipped-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('show')
-            $('#skipped-collapse-e802f84f-6439-4049-913e-0c93ffcad99e').removeClass('show')
-            $('#skipped-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('collapsed')
-            $('#skipped-collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').addClass('collapsed')
-            $('#skipped-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('show')
-            $('#skipped-collapse-6e03dbe7-0142-452c-8dfb-6803931f6c9a').removeClass('show')
-            $('#skipped-882837ab-eefa-4278-8dca-fdef471fb298').addClass('collapsed')
-            $('#skipped-collapse-882837ab-eefa-4278-8dca-fdef471fb298').addClass('collapsed')
-            $('#skipped-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('show')
-            $('#skipped-collapse-882837ab-eefa-4278-8dca-fdef471fb298').removeClass('show')
-            $('#skipped-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('collapsed')
-            $('#skipped-collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').addClass('collapsed')
-            $('#skipped-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('show')
-            $('#skipped-collapse-1a2a60dc-2c6e-44f0-b38d-a8252e768f8b').removeClass('show')
-            $('#skipped-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('collapsed')
-            $('#skipped-collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').addClass('collapsed')
-            $('#skipped-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('show')
-            $('#skipped-collapse-ee5666a6-8c3e-4058-af85-3faf9ed8a72c').removeClass('show')
+            $('#skipped-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('collapsed')
+            $('#skipped-collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').addClass('collapsed')
+            $('#skipped-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('show')
+            $('#skipped-collapse-1e72b693-1479-4946-84a6-49dbf0a8b461').removeClass('show')
+            $('#skipped-3085772d-6203-4902-8d05-9a41a863edc6').addClass('collapsed')
+            $('#skipped-collapse-3085772d-6203-4902-8d05-9a41a863edc6').addClass('collapsed')
+            $('#skipped-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('show')
+            $('#skipped-collapse-3085772d-6203-4902-8d05-9a41a863edc6').removeClass('show')
+            $('#skipped-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('collapsed')
+            $('#skipped-collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').addClass('collapsed')
+            $('#skipped-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('show')
+            $('#skipped-collapse-27b89661-9007-4898-a7ee-b4449ff60b8c').removeClass('show')
+            $('#skipped-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('collapsed')
+            $('#skipped-collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').addClass('collapsed')
+            $('#skipped-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('show')
+            $('#skipped-collapse-8b2b3c3b-6b29-4f84-b447-eb959ae0e486').removeClass('show')
+            $('#skipped-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('collapsed')
+            $('#skipped-collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').addClass('collapsed')
+            $('#skipped-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('show')
+            $('#skipped-collapse-b18d0c3d-0af9-403c-a706-463f7c26a916').removeClass('show')
+            $('#skipped-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('collapsed')
+            $('#skipped-collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').addClass('collapsed')
+            $('#skipped-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('show')
+            $('#skipped-collapse-4cc66ded-7cc7-490b-9efa-cdb4f5b9e906').removeClass('show')
+            $('#skipped-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('collapsed')
+            $('#skipped-collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').addClass('collapsed')
+            $('#skipped-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('show')
+            $('#skipped-collapse-41f553cb-840f-40aa-a62d-69dd548a9c29').removeClass('show')
         $('#openAllSkipped').html("Expand All Skipped Tests");
         break;
 }
@@ -2586,9 +2618,21 @@ let failedItemContent
 let failedItemHeading
 switch (clickCount){
     case 1:
+            failedItemHeading = $('#fails-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba');
+            failedItemContent = $("#fails-collapse-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba");
+            failedItemHeading.removeClass('collapsed')
+            failedItemContent.removeClass('collapsed')
+            failedItemHeading.addClass('show')
+            failedItemContent.addClass('show')
         $('#openAllFailed').html("Collapse All Failed Tests");
         break;
     case 2:
+            failedItemHeading = $('#fails-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba');
+            failedItemContent = $("#fails-collapse-bd82f3c4-3a00-4596-b95e-3d2514b1f4ba");
+            failedItemHeading.removeClass('show')
+            failedItemContent.removeClass('show')
+            failedItemHeading.addClass('collapsed')
+            failedItemContent.addClass('collapsed')
         $('#openAllFailed').html("Expand All Failed Tests");
         break;
 }
@@ -2713,6 +2757,8 @@ function scrollFunction() {
     document.getElementById("openAllRequests").style.display = "none";
 
 
+    document.getElementById("showOnlyFailures").style.display = "none";
+    document.getElementById("openAllFailed").style.display = "none";
   } else {
     document.getElementById("topOfRequestsScreen").style.display = "none";
     document.getElementById("topOfFailuresScreen").style.display = "none";
@@ -2720,6 +2766,8 @@ function scrollFunction() {
     document.getElementById("openAll").style.display = "block";
     document.getElementById("openAllRequests").style.display = "block";
 
+    document.getElementById("showOnlyFailures").style.display = "block";
+    document.getElementById("openAllFailed").style.display = "block";
   }
 }
 
@@ -2782,6 +2830,7 @@ window.onload = function () {
   document.getElementById('iteration-0').click();
   document.getElementById('iterationSelected').innerHTML = `Iteration ${document.getElementById('iteration-0').innerHTML} selected`
 
+    $("#iteration-0").removeClass('itPassed').addClass('itFailed')
 }
 </script>
 
